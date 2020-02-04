@@ -7,6 +7,8 @@ const requestListener = (request, response) => {
 
 const server = http.createServer(requestListener);
 
-server.listen(9000, () => {
+const confirmationCallback = () => {
     console.log('Server is running...');
-});
+}
+
+server.listen(9000, confirmationCallback);
