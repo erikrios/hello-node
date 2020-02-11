@@ -1,8 +1,7 @@
 const http = require('http');
 
 var requestListener = (request, response) => {
-    console.log(request.url);
-    console.log('Call Me!');
+    console.log(response);
     response.write('Hello, Node!');
     response.end();
 }
